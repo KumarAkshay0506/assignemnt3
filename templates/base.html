@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% block head %}
+    <link rel=stylesheet type=text/css href="{{ url_for('static', filename='style.css') }}">
+    <title>{% block title %}{% endblock %} - IBM Cloud Platform</title>
+    {% endblock %}
+</head>
+<body>
+    <div id="page">
+    
+
+    {% block content %}{% endblock %}
+    </div>
+    <div id="footer">
+        <p><p/>
+        <hr/>
+        {% block footer %}
+       Earhquake information based on <a href="https://earthquakes.usgs.gov/earthquakes/feed/v1.csv.php">EarthQuake Info</a>
+        {% endblock %}
+    </div>
+</body>
+</html>

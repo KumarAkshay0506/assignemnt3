@@ -1,0 +1,25 @@
+{# index page, providing a form to submit  various querrying critieria #}
+{% extends "base.html" %}
+{% block title %}Earthqauke Information{% endblock %}
+{% block content %}
+<h1>EARTHQUAKE INFORMATION AKSHAY KUMAR 1001511787</h1>
+<p>This app is named earth. You can search for information on various earthqaukes across the world for any time period.
+</p>
+<br>
+<p>
+ <form action="/search" method="get">
+ Mag: <input type="text" name="name" maxlength="200" width="60"> <input type="submit" value="Search">
+</form>
+</p>
+<p>
+ <form action="/search2" method="get">
+ MagLower: <input type="text" name="name1" maxlength="200" width="60"> 
+ MagUpper: <input type="text" name="name2" maxlength="200" width="60"> <input type="submit" value="Search">
+</form></p>
+<p>
+ <form action="/search3" method="get">
+ Distnace KM: <input type="text" name="name3" maxlength="200" width="60"> 
+ Place Name: <input type="text" name="name4" maxlength="200" width="60"> <input type="submit" value="Search">
+</form></p>
+</p>
+{% endblock %}

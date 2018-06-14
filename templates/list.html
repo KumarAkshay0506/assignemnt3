@@ -1,0 +1,9 @@
+# Display information about a city. #}
+{# The app fetches the information from the database and passes it into this page in "ci". #}
+{% block title %}Earthquake Information Akshay Kumar 1001511787{% endblock %}
+{% block content %}
+{# Loop over cities if we have multiple results for popular names like Milan, Rome, Berlin #}
+{% for city in ci %}
+ <b>{{city["TIME"]}}</b><b>{{city["LAT"]}}</b><b>{{city["LON"]}}</b><b>{{city["DEPTH"]}}</b><b>{{city["MAG"]}}</b><b>{{city["MAGTYPE"]}}</b><b>{{city["NST"]}}</b><b>{{city["GAP"]}}</b><b>{{city["DMIN"]}}</b><b>{{city["RMS"]}}</b><b>{{city["NET"]}}</b><b>{{city["RMS"]}}</b><b>{{city["NET"]}}</b><b>{{city["RMS"]}}</b><b>{{city["ID"]}}</b><b>{{city["UPDATED"]}}</b><b>{{city["PLACE"]}}</b><b>{{city["TYPE"]}}</b><b>{{city["HE"]}}</b><b>{{city["DE"]}}</b><b>{{city["MAGE"]}}</b><b>{{city["MAGNST"]}}</b><b>{{city["STATUS"]}}</b><b>{{city["LOCSOURCE"]}}</b><b>{{city["MAGSOURCE"]}}</b>
+{% endfor %}
+{% endblock %}
